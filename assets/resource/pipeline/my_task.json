@@ -2,19 +2,39 @@
     "MyTask1": {},
     "MyTask2": {},
     "MyTask3": {},
+    "ClickCandyCrushButton": {
+        "recognition": "TemplateMatch",
+        "roi": [473, 421, 44, 42],
+        "template": "1test.png",
+        "action": "Click",
+        "post_delay": 3000
+    },
     "FindSmallestNumber": {
         "recognition": "Custom",
         "custom_recognition": "find_smallest_number",
         "custom_recognition_param": {
             "candidate_rois": [
-                [100, 100, 200, 100],
-                [300, 100, 200, 100]
+                [
+                    100,
+                    100,
+                    200,
+                    100
+                ],
+                [
+                    300,
+                    100,
+                    200,
+                    100
+                ]
             ]
         },
         "action": "Custom",
         "custom_action": "click_target",
         "custom_action_param": {
-            "target": [10, 20]
+            "target": [
+                10,
+                20
+            ]
         }
     },
     "RecognizeNumber": {
