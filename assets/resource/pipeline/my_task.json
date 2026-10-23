@@ -4,10 +4,33 @@
     "MyTask3": {},
     "ClickCandyCrushButton": {
         "recognition": "TemplateMatch",
-        "roi": [473, 421, 44, 42],
+        "roi": [
+            473,
+            421,
+            44,
+            42
+        ],
         "template": "1test.png",
         "action": "Click",
-        "post_delay": 3000
+        "next": "ClickCollectAllOrders"
+    },
+    "ClickCollectAllOrders": {
+        "recognition": "OCR",
+        "roi": [
+            430,
+            201,
+            146,
+            40
+        ],
+        "expected": "^Collect\\s*all\\s*orders$",
+        "only_rec": true,
+        "action": "Click",
+        "target": [
+            398,
+            435,
+            125,
+            45
+        ]
     },
     "FindSmallestNumber": {
         "recognition": "Custom",
